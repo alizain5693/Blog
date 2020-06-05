@@ -9,13 +9,18 @@
 <% posts.forEach(post => { %> 
     <h2><%=  post.title%> </h2>
     <p><%=  post.body.substring(0,100)+"..."  %></p>
-    <a href=<%= post.url %> >Read More</a>
+    <a href=<%= post.url %> ><button type="button" class="btn btn-outline-primary">Read more <img class = 'btn-arrow'src="https://img.icons8.com/plasticine/100/000000/arrow.png"/></button></a>
 <% }) %> 
 
 
 
-<!-- <button type="submit" href = "/compose" class = "btn btn-primary"  >Compose</button> -->
-
+<div>
+    <br>
+    <br>
+    <br>
+    <a href = "/compose">    <button type="button" class="btn btn-outline-primary">Compose <img class = 'btn-arrow'src="https://img.icons8.com/ultraviolet/40/000000/edit.png"/></button>
+    </a>
+</div>
 
 
 <%- include('partials/footer'); %>
